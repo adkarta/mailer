@@ -48,8 +48,8 @@ func New(host string, port int, from string, to []string) *Pakpos {
 	}
 }
 
-//InjectMessages ...
-func (m *Pakpos) InjectMessages(subject, body map[string]string) *Pakpos {
+//SetMessages ...
+func (m *Pakpos) SetMessages(subject, body map[string]string) *Pakpos {
 	m.Subject = subject
 	m.Body = body
 	return m
